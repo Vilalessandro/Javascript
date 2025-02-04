@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: larger;
+            background-color: darkgray;
+        }
+        
+        h1 {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seja bem Vindo</h1>
+    <script>
+        var nome = window.prompt('Antes de tudo, precisamos saber seu nome!')
+        document.writeln(`Olá ${nome}. Seu nome tem ${nome.length} letras.`)
+        document.write(`O seu nome em letras maiuscula é ${nome.toUpperCase()}.`)
+    </script>
+</body>
+</html>

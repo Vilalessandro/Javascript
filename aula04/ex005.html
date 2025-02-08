@@ -13,11 +13,38 @@
         h1 {
             text-align: center;
         }
+
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
     </style>
 </head>
 <body>
     <h1>My First Project</h1>
     <p>Aqui vai o resultado</p>
-    <div>Clique em mim</div>
+    <p>Aprendendo usar o <strong>DOM</strong> com JS. </p>
+    <h1>Outro H1</h1>
+    <div id="msg">
+        <a href="#">Clique em mim</a>    
+    </div>
+    <div class="classe"> <!-- Classe de numero 0 -->
+        <a href="#">Clique em mim de novo</a>
+    </div>
+    <div class="classe"> <!-- Classe de numero 1 -->
+        <p>Alessandro Coutinho Vila</p>
+    </div>
+
+    <script>
+
+        var p = window.document.getElementsByTagName (`p`) [1]
+    document.write(p.innerHTML) //innerText pega só o texto. Já o innerHTML pega o texto com as formatações.
+        p.style.color = 'red'
+        var d = window.document.getElementById (`msg`)
+        d.style.background = 'white'
+        var c = window.document.querySelectorAll (`div.classe`) [1]
+        c.style.background = 'lightblue'
+        
+    </script>
 </body>
 </html>

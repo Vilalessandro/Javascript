@@ -24,6 +24,15 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.582);
 }
 
+section > div {
+    text-align: center;
+    padding: 10px;
+}
+
+#foto > img {
+    border-radius: 100px;    
+}
+
 footer {
     color: #ffffff;
     padding: 15px;

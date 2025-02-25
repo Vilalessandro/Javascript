@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(28, 138, 241, 0.664);
+}
+
+header {
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+}
+
+section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.582);
+}
+
+section > div {
+    padding: 5px;
+}
+
+footer {
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    font-style: italic;
+}

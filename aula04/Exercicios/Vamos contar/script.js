@@ -1,53 +1,19 @@
-function contar() {
-    window.alert('Olá')
-}
-    /*var data = new Date()
-    var ano = data.getFullYear()
-    var fano = document.getElementById('txtano')
-    var res = document.getElementById('res')
-    if (fano.value.length == '0' ||  Number(fano.value) > ano) {
+function contar(){
+    let ini = document.getElementById('txti')
+    let fim = document.getElementById('txtf')
+    let passo = document.getElementById('txtp') 
+    let res = document.getElementById('res')
+
+    if (ini.value.length == 0 || fim.value.length == 0 || pas.value.length == 0) {
         window.alert('[ERRO] Verifique os dados e tente novamente!')
     } else {
-        var fsex = document.getElementsByName('radsex')
-        var idade = ano - Number(fano.value)
-        var genero = ''
-        var img = document.createElement('img')
-        img.style.width = '250px'
-        img.style.height = '250px'
-        img.style.paddingTop = '5px'
-        img.setAttribute('id', 'foto')
-        if (fsex[0].checked) {
-            genero = 'Homem'
-            if (idade >= 0 && idade < 10){
-                //Criança
-                img.setAttribute('src', 'meninoGimp.png')
-            } else if (idade < 21) {
-                //Jovem
-                img.setAttribute('src', 'jovemHomem.png')
-            } else if (idade < 50){
-                //Adulto
-                img.setAttribute('src', 'homemGimp.png')
-            } else {
-                //Idoso
-                img.setAttribute('src', 'idosoGimp.png')
-            }
-        } else if (fsex[1].checked) {
-            genero = 'Mulher'
-            if (idade >= 0 && idade < 10){
-                //Criança
-                img.setAttribute('src', 'meninaGimp.png')
-            } else if (idade < 21) {
-                //Jovem
-                img.setAttribute('src', 'jovemMulher.png')
-            } else if (idade < 50){
-                //Adulto
-                img.setAttribute('src', 'mulherGimp.png')
-            } else {
-                //Idoso
-                img.setAttribute('src', 'idosaGimp.png')
-            }
+        res.innerHTML = 'Contando: '
+        let i = Number(ini.value)
+        let f = Number(fim.value)
+        let p = Number(passo.value)
+
+        for (let c = i; c <= f; c += p) {
+            res.innerHTML += `${c}`
         }
-        res.innerHTML = `Dectamos um(a) ${genero} com ${idade} anos.`
-        res.appendChild(img)
     }
-}*/
+}

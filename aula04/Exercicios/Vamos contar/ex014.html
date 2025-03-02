@@ -13,20 +13,14 @@
     </header>
     <main>
         <section>
-            <div id="ini">
-                <p>Inicio: <input type="number" name="nunini" id="Ini" required minlength="1"></p>                
+            <div id="dados">
+                <p>Inicio: <input type="number" name="inicio" id="txti" min="0" placeholder="Digite um numero" oninput="validity.valid || (value='');"></p>
+                <p>Fim: <input type="number" name="fim" id="txtf" min="0" placeholder="Digite um numero" oninput="validity.valid || (value='');"></p>
+                <p>Passo: <input type="number" name="passo" id="txtp" min="0" placeholder="Pular de ..." oninput="validity.valid || (value='');"></p>
+                <input id="contar" type="button" value="Contar" onclick="contar()">
             </div>
-            <div id="fim">
-                <p>Fim: <input type="number" name="nunfim" id="fim" required></p>
-            </div>
-            <div id="passo">
-                <p>Passo: <input type="number" name="nunpas" id="passo" required minlength="0"></p>
-            </div>
-            <div>
-                <input type="button" value="Contar" onclick="contar">
-            </div>
-            <div>
-                <p><strong>Contando</strong></p>
+            <div id="res">
+                <p><strong>Preparando a contagem...</strong></p> 
             </div>
         </section>
     </main>

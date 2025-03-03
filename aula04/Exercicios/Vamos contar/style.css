@@ -21,15 +21,20 @@ section {
     padding: 15px;
     width: 500px;
     margin: auto;
+    text-align: justify;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.582);
 }
 
-p {
+#dados > p {
     padding: 5px;
 }
 
 #contar {
     margin-left: 5px;
+}
+
+#res {
+    padding: 10px 5px;
 }
 
 footer {

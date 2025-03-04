@@ -13,13 +13,14 @@
     </header>
     <main>
         <section>
-            <div id="dados">
-                <p>Numero: </p>
-                <p>Fim</p>
-                <p>Passo</p>
+            <div>
+                <p><strong>Número: </strong><input type="number" name="num" id="txtn"></p>
+                <input type="button" value="Gerar Tabuada" id="txtab" onclick="tabuada()">
             </div>
-            <div id="res">
-                <p><strong>Preparando a contagem...</strong></p> 
+            <div>
+               <select name="tabuada" id="seltab" size="10">
+                <option>Digite um número acima!</option>
+               </select>
             </div>
         </section>
     </main>

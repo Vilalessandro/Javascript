@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,20 +47,32 @@
         input {
             padding: 2px;
         }
+
+        #botao {
+            margin-left: 5px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
     </style>
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Analisador de Números</h1>
+        <h1>Analizzatore di numeri</h1>
     </header>
     <main>
         <div>
-            <p>Número (entre 1 e 100): <input type="number" name="txtn" id="txtn"><input type="button" value="Adicionar"></p>            
+            <p>Numero (tra 1 e 100): <input type="number" name="fnum" id="fnum" size="10" placeholder="Scriva un numero"><input id="botao" type="button" value="Aggiungere" onclick="adicionar()"> </p>            
         </div>
         <div>
-            <select name="valores" id="txtv"></select>
+            <select name="valores" id="flist"></select>
         </div>
-        <input type="button" value="Finalizar">
+        <input type="button" value="Finire">
+        <div id="res">
+
+        </div>
     </main>
     <footer>
         <p>All rights reserved</p>

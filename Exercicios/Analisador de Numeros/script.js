@@ -1,9 +1,9 @@
 let num = document.getElementById('fnum')
-let list = document.getElementById('flist')
+let lista = document.getElementById('flist')
 let res = document.getElementById('res')
 let valores = []
 
-function isNumero(n) {
+function numero(n) {
     if (Number(n) >= 1 && Number(n) <= 100) {
         return true
     } else {
@@ -11,7 +11,7 @@ function isNumero(n) {
     }
 }
 
-function inLista (n, l){
+function naLista (n, l){
     if (l.indexOf(Number(n)) != -1) {
         return true
     } else {
@@ -20,9 +20,13 @@ function inLista (n, l){
 }
 
 function adicionar() {
-    if (isNumero(num.value) && !inLista(num.value, valores)){
-        window.alert('Tudo OK')
+    if (numero(num.value) && !naLista(num.value, valores)){
+        valores.push(Number(num.value))
+        let item = document.createElement('option')
+        item.text = `Valor ${num.value} adicionado.`
+        lista.appendChild(item)
     } else {
         window.alert('Valore invalido oppura già nella lista!')
     }
 }
+

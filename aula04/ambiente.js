@@ -1,5 +1,5 @@
 let valores = [5, 2, 8, 9, 15, 89, 23]
-valores.sort()
+//valores.sort()
 console.log(valores.length)
 
 /*

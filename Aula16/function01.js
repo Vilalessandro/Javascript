@@ -6,6 +6,6 @@ function parimpar(n) {
     }
 }
 
-let res = parimpar(4)
+let res = parimpar()
 
-console.log(`O numero é ${parimpar(5)}`)
+console.log(`O numero é ${parimpar(1)}`)
